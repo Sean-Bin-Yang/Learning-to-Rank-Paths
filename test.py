@@ -12,7 +12,6 @@ ModelPath = './Data/model_128/'
 
 
 #
-# del_file(ModelPath)
 tf.flags.DEFINE_float("learning_rate", 0.0001, "learning_rate.")
 tf.flags.DEFINE_float("alpha",0.6,"alpha.")
 tf.flags.DEFINE_integer("sequence_batch_size", 120, "sequence batch size.")  #
@@ -76,7 +75,8 @@ temporalNode = pickle.load(open('./Data/temporalDT_node2vec_0826_new_16.pkl', 'r
 sess = tf.Session(config=tf.ConfigProto(allow_soft_placement=True))
 model = DeepSim(config, sess, deep_walk, driverID, temporalNode)
 saver = tf.train.Saver()
-#Mode Loade
+
+#Model Loade
 print('=====================================')
 print('             Model Loading!            ')
 print('=====================================\n')
