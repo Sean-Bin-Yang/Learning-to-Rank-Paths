@@ -8,7 +8,7 @@ This repository holds the code used in our **TKDE-20** paper: [Context-Aware Pat
 * Python = 3.6
 * Numpy >= 1.16.2
 * Pickle
-* Tensorflow = 1.12.0 (both 0.4 and 1.0 are tested)
+* Tensorflow = 1.12.0
 
 Please refer to the source code to install the required packages in Python.
 
