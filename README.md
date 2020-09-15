@@ -47,7 +47,7 @@ python test.py
                Chenjuan Guo and
                Bin Yang},
   title     = {Context-Aware Path Ranking in Road Networks},
-  booktitle = {IEEE Transactions on Knowledge and Data Engineering, 2020},
+  booktitle = {IEEE Transactions on Knowledge and Data Engineering},
   year      = {2020},
 }
 ```
