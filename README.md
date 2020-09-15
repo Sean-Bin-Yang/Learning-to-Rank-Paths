@@ -15,7 +15,7 @@ Please refer to the source code to install the required packages in Python.
 ## Dataset
 
 In the Data folder, there are four files:
-* data_DT200915_example_train.pkl is a sample data file. The data format is (x_data, x_temporal,x_driver,y_train,tt_train,fc_train,len_train), here x_data is path. x_temporal is temporal information for specificed paths based on the departure time. x_driver is the additional information of driver. tt_train (travel time), fc_train (fuel consumpation) and len_train (travel distance) is the additional information of path.
+* data_DT200915_example_train.pkl is a sample data file. The data format is (x_data, x_temporal,x_driver,y_train,tt_train,fc_train,len_train), here x_data is path. x_temporal is temporal information for specificed paths based on the departure time. x_driver is the additional information of driver. y_train is a path similarity with the ground truth path. tt_train (travel time), fc_train (fuel consumpation) and len_train (travel distance) is the additional information of path.
 * driverid_onehot_0823_166.pkl is the onehot embedding for driver IDs.
 * road_network_200703_128.pkl is the node embedding of the road network.
 * temporalDT_node2vec_0826_new_16.pkl is the temporal node embedding.
