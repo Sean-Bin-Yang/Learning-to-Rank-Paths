@@ -14,11 +14,11 @@ Please refer to the source code to install the required packages in Python.
 
 ## Dataset
 
-The dataset contains 180 million GPS records for two years period from 166 drivers in Denmark. The sampling rate of the GPS data is 1 Hz. We split the GPS records ino 22612 trajectories representing different trips. Here we just give 64 paths for other user to test since the copyright reason. In the Data file there have four files, each is:
-* data_DT200915_example_train.pkl is a sample data file. The data format is (x_data, x_temporal,x_driver,y_train,tt_train,fc_train,len_train), here x_data is path sequence. x_temporal is temporal information for specificed paths based on the departure time. x_driver is the additional information of driver. tt_train (travel time), fc_train (fuel consumpation) and len_train (travel distance) is the additional information of path.
-* driverid_onehot_0823_166.pkl is onehot format in terms of dirver id.
-* road_network_200703_128.pkl is node embedding of denmark road network.
-* temporalDT_node2vec_0826_new_16.pkl is temporal node embedding.
+In the Data folder, there are four files:
+* data_DT200915_example_train.pkl is a sample data file. The data format is (x_data, x_temporal,x_driver,y_train,tt_train,fc_train,len_train), here x_data is path. x_temporal is temporal information for specificed paths based on the departure time. x_driver is the additional information of driver. tt_train (travel time), fc_train (fuel consumpation) and len_train (travel distance) is the additional information of path.
+* driverid_onehot_0823_166.pkl is the onehot embedding for driver IDs.
+* road_network_200703_128.pkl is the node embedding of the road network.
+* temporalDT_node2vec_0826_new_16.pkl is the temporal node embedding.
 
 For the detailed format of dataset, please refer file "data_DT200915_example_train.pkl" 
 
@@ -36,7 +36,7 @@ python train.py
 ## Testing
 
 ```bash
-python test-mul.py 
+python test.py 
 ```
 
 ## Reference
